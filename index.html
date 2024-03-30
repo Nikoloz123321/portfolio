@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/ccbfc9e856.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/loggo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html"><i class="fa-solid fa-house fa-sm" style="color: #24d766;"></i>
+                            Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-circle-info fa-sm" style="color: #24d766;"></i>
+                            About me</a></li>
+                    <li><a href="#services"><i class="fa-brands fa-servicestack fa-sm" style="color: #24d766;"></i>
+                            My skills</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-person fa-sm" style="color: #24d766;"></i>
+                            Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-address-book fa-sm" style="color: #24d766;"></i>
+                            Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FRONT-END DEVELOPER</p>
+                <h1>Hello <i class="fa-solid fa-hand"></i> I'm <span>Nikoloz</span><br></h1>
+            </div>
+        </div>
+    </div>
+    <!------------- About ------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title"><i class="fa-regular fa-address-card fa-lg" style="color: #24d766;"></i>
+                        About me</h1>
+                    <br><br>
+                    <p>My name is Nikoloz Natsilashvili and I started studying Front-end Development about 5 months ago. 
+                        I have already study some courses about HTML/CSS and Javascript(react.js)  Basics.</p>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br>Basic knowledge</li>
+                            <li><span>CSS</span><br>Basic knowledge</li>
+                            <li><span>Javascript</span><br>Basic knowledge</li>
+                            <li><span>React</span><br>Basic knowledge</li>
+                            <li><span>Bootstrap</span><br>Basic knowledgeა</li>
+                            <li><span>Figma</span><br>Basic knowledge</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Business And Technology University</span><br><br>Student</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Useful sites</span></li>
+                            <li><a href="https://www.w3schools.com/">https://www.w3schools.com/</a><br><br>HTML, CSS & JAVASCRIPT</li>
+                            <li><a href="https://val-do.com/">https://val-do.com/</a><br><br>HTML, CSS</li>
+                            <li><a href="https://getbootstrap.com/">https://getbootstrap.com/</a><br><br>Work on the Bootstrap</li>
+                            <li><a href="https://www.figma.com">https://www.figma.com</a><br><br>Work on the Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------ service  -------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5" style="color: #ff0000;"></i>
+                    <h2>HTML</h2>
+                    <p>Basic knowledge</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt" style="color: #079ae4;"></i>
+                    <h2>CSS</h2>
+                    <p>Basic knowledge</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js" style="color: #ece522;"></i>
+                    <h2>JAVASCRIPT</h2>
+                    <p>Basic knowledge</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react" style="color: #5fdcec;"></i>
+                    <h2>React</h2>
+                    <p>Basic knowledge</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-bootstrap" style="color: #9121ba;"></i>
+                    <h2>Bootstrap</h2>
+                    <p>Basic knowledge</p>
+                </div>
+                <div>
+                    <img src="images/figma.png" width="45px" alt="">
+                    <h2>Figma</h2>
+                    <p>Basic knowledge</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/figma1.png" alt="">
+                    <div class="layer">
+                        <h3>FIGMA project 1</h3>
+                        <p>This is my first figma project.
+                        </p>
+                        <a href="file:///C:/Users/user/Desktop/HTML%20&%20CSS%20&%20JAVASCRIPT/%E1%83%A2%E1%83%94%E1%83%A1%E1%83%A2%E1%83%98%20%E1%83%A1%E1%83%90%E1%83%98%E1%83%A2%E1%83%94%E1%83%91%E1%83%98%20(projects)/my%20first%20figma%20project/index.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/figma2.png" alt="">
+                    <div class="layer">
+                        <h3>FIGMA Project 2</h3>
+                        <p>This is my second figma project.
+                        </p>
+                        <a href="file:///C:/Users/user/Desktop/HTML%20&%20CSS%20&%20JAVASCRIPT/%E1%83%A2%E1%83%94%E1%83%A1%E1%83%A2%E1%83%98%20%E1%83%A1%E1%83%90%E1%83%98%E1%83%A2%E1%83%94%E1%83%91%E1%83%98%20(projects)/my%20second%20figma%20project/index.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bootstrap.png" alt="">
+                    <div class="layer">
+                        <h3>Project of Bootstrap</h3>
+                        <p>This is my first bootstrap project.
+                        </p>
+                        <a href="file:///C:/Users/user/Desktop/HTML%20&%20CSS%20&%20JAVASCRIPT/%E1%83%A2%E1%83%94%E1%83%A1%E1%83%A2%E1%83%98%20%E1%83%A1%E1%83%90%E1%83%98%E1%83%A2%E1%83%94%E1%83%91%E1%83%98%20(projects)/New%20project/index.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------------- contact -------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Mail: n.nawilashvili@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> Phone: +995 599 91 12 18</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nika.nawilashvili/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nattssill/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nikoloz-natsilashvili-97b249268/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Nikkolozz"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="../CV ნიკოლოზ ნაწილაშვილი.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Write something..."></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>COPYRIGHT © all rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
